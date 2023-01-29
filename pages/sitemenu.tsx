@@ -2,7 +2,7 @@ import { builder, BuilderComponent } from '@builder.io/react'
 
 builder.init('21806edb025d4a679c160f645eacc552')
 
-export const getStaticProps = async (context) => {
+export const getStaticProps = async (context: any) => {
   const content = await builder.get('site-menu', { url: context.resolvedUrl }).promise();
 
   return { 
